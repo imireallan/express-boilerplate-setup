@@ -1,0 +1,30 @@
+{
+  "name": "express-boilerplate-setup",
+  "version": "1.0.0",
+  "description": "express-boilerplate-setup",
+  "main": "index.js",
+  "engines": {
+    "node": "12.20.0"
+  },
+  "scripts": {
+    "start": "node .",
+    "build": "babel --delete-dir-on-start --out-dir dist --copy-files --ignore \"**/__tests__/**,**/__mocks__/**\" --no-copy-ignored src"
+  },
+  "author": "Allan Imire",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "loglevel": "^1.7.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.0",
+    "@babel/core": "^7.13.1",
+    "@babel/preset-env": "^7.13.5",
+    "@babel/register": "^7.13.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7"
+  }
+}
